@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Devine Nombre DApp</title></head>
+<body>
+    <h1>Jeu Devine le Nombre</h1>
+    <p style="color:green;">{{ message }}</p>
+
+    <form method="post">
+        <h3>Initialiser le jeu (Joueur A)</h3>
+        Hash secret : <input name="hash_secret" required>
+        <input type="hidden" name="action" value="initialiser">
+        <button type="submit">Initialiser</button>
+    </form>
+
+    <br>
+
+    <form method="post">
+        <h3>Révéler le nombre (Joueur A)</h3>
+        Nombre : <input name="nombre" required>
+        Salt : <input name="salt" required>
+        <input type="hidden" name="action" value="reveler">
+        <button type="submit">Révéler</button>
+    </form>
+</body>
+</html>
